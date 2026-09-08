@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+locale = 'pt-BR'
+title = 'peburgos'
+
+[menus]
+  [[menus.main]]
+    name = '/now'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = '/logs'
+    pageRef = '/logs'
+    weight = 20
+
+  [[menus.main]]
+    name = '/about'
+    pageRef = '/about'
+    weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.93.0'
+
+

@@ -1,0 +1,156 @@
+/* You can add custom style here */
+/* Enhanced Table of Contents Styling */
+.toc {
+  position: relative;
+}
+
+.toc-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.toc-title::before {
+  flex-shrink: 0;
+}
+
+/* Visual indicator for TOC depth levels */
+.toc-content ol ol {
+  opacity: 0.85;
+}
+
+.toc-content ol ol ol {
+  opacity: 0.7;
+}
+
+/* Smooth transitions for links in TOC */
+.toc-content a {
+  position: relative;
+}
+
+.toc-content a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-text-primary);
+  transition: width 0.2s ease-in-out;
+}
+
+.toc-content a:hover::after {
+  width: 100%;
+}
+
+/* ===================================================== */
+/* 1. Ajuste Base: Dark Mode via Variáveis               */
+/* ===================================================== */
+:root {
+  /* Configurações base do tema Shibui */
+  --bg-h: 0;
+  --bg-s: 0%;
+  --bg-l: 12%; /* Fundo escuro */
+
+  /* Ajuste manual da Borda/Divider para o Dark Mode */
+  --color-border: hsl(var(--bg-h) var(--bg-s) 25%); 
+}
+
+/* ===================================================== */
+/* 3. Layout Customizado: Listagem de Logs               */
+/* ===================================================== */
+
+/* Reseta a lista e anula estilos globais do tema */
+ul.benji-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 1rem 0 2rem 0 !important; /* Margem superior reduzida de 2rem para 1rem */
+  display: flex;
+  flex-direction: column;
+}
+
+ul.benji-list li {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important; /* Remove qualquer borda herdada do li */
+}
+
+/* O container principal da linha (Grid: Ano + Bloco Direito) */
+a.benji-row {
+  display: grid !important;
+  grid-template-columns: 60px 1fr !important;
+  align-items: center !important; 
+  gap: 1rem;
+  padding: 0.25rem 0 !important; /* Padding vertical drasticamente reduzido (antes 0.75rem) */
+  text-decoration: none !important;
+  color: var(--color-text-primary) !important;
+  width: 100%;
+  border: none !important; 
+  box-shadow: none !important;
+  background-image: none !important;
+  transition: opacity 0.2s ease-in-out;
+}
+
+a.benji-row:hover {
+  opacity: 0.6;
+}
+
+/* O bloco da direita que contém Título, Pontilhado e Data (Flexbox) */
+.b-main {
+  display: flex !important;
+  align-items: baseline !important; /* Garante que os textos fiquem na mesma linha de base */
+  width: 100%;
+  border: none !important; 
+  padding: 0 !important;
+}
+
+/* O divisor pontilhado elástico (Leader Dots) */
+.b-dots {
+  flex-grow: 1; /* Ocupa todo o espaço livre entre título e data */
+  border-bottom: 2px dotted var(--color-border); /* O estilo dos pontos */
+  margin: 0 0.75rem; /* Respiro lateral */
+  opacity: 0.5; /* Suaviza o contraste do pontilhado */
+  position: relative;
+  top: -4px; /* Ajuste ótico para alinhar com a base das letras */
+}
+
+/* ===================================================== */
+/* 4. Tipografia do Layout Customizado                   */
+/* ===================================================== */
+
+.b-year, .b-date {
+  color: var(--color-text-muted);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.b-title {
+  text-align: left !important;
+  font-weight: normal;
+  line-height: 1.5;
+  flex-shrink: 0; /* Protege o título contra compressão */
+  max-width: 75%; /* Evita que títulos imensos consumam o espaço da data */
+  word-break: break-word; 
+}
+
+.b-date {
+  text-align: right !important;
+  flex-shrink: 0; /* Protege a data contra compressão */
+}
+
+
+/* ===================================================== */
+/* 5. Responsividade: Telas menores                      */
+/* ===================================================== */
+@media (max-width: 600px) {
+  /* Reduz a largura dedicada ao Ano no mobile */
+  a.benji-row {
+    grid-template-columns: 45px 1fr !important;
+    gap: 0.5rem;
+  }
+  
+  /* Reduz o respiro do pontilhado no mobile */
+  .b-dots {
+    margin: 0 0.5rem;
+  }
+}

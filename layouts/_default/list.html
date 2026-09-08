@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+  <ul class="benji-list">
+    {{ range .Pages.GroupByDate "2006" }}
+      {{ $year := .Key }}
+      
+      {{ range $index, $page := .Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}" class="benji-row">
+            <span class="b-year">{{ if eq $index 0 }}{{ $year }}{{ end }}</span>
+            
+            <div class="b-main">
+              <span class="b-title">{{ .Title }}</span>
+              <span class="b-dots"></span> <!-- O novo conector pontilhado -->
+              <span class="b-date">{{ .Date.Format "02/01" }}</span>
+            </div>
+
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}

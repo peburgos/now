@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>UX on peburgos</title>
+		<link>http://localhost:1313/tags/ux/</link>
+		<description>Recent content in UX on peburgos</description>
+		<generator>Hugo</generator>
+		<language>pt-BR</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 02 Mar 2021 17:12:11 +0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Será que apenas líderes de mercado podem ser boas referências em UX?</title>
+				<link>http://localhost:1313/logs/2021/resso/</link>
+				<pubDate>Tue, 02 Mar 2021 17:12:11 +0700</pubDate>
+				<guid>http://localhost:1313/logs/2021/resso/</guid>
+				<description>&lt;p&gt;Ao pensar em uma boa experiência do usuário é comum pensarmos em produtos de marcas como Nubank, Airbnb, Netflix e Apple. Isso pode facilmente ser comprovado pela inúmera quantidade de artigos que já existem citando esses produtos e suas funcionalidades como exemplos de boa UX.&lt;/p&gt;&#xA;&lt;p&gt;Contudo, será que a única coisa que é preciso para um produto ter uma boa experiência do usuário é replicar as essas funcionalidades? Você já parou para pensar se elas realmente são coerentes com o contexto do seu produto e principalmente com o contexto de &lt;strong&gt;quem&lt;/strong&gt; &lt;strong&gt;vai utilizar esse produto?&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Log on peburgos</title>
+		<link>http://localhost:1313/tags/log/</link>
+		<description>Recent content in Log on peburgos</description>
+		<generator>Hugo</generator>
+		<language>pt-BR</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 01 Aug 2026 17:12:11 +0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/log/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>01::reboot</title>
+				<link>http://localhost:1313/logs/2026/08---boot/</link>
+				<pubDate>Sat, 01 Aug 2026 17:12:11 +0700</pubDate>
+				<guid>http://localhost:1313/logs/2026/08---boot/</guid>
+				<description>&lt;h1 id=&#34;done&#34;&gt;&#xD;&#xA;  done&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;h2 id=&#34;movies&#34;&gt;&#xD;&#xA;  movies&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🎞️ Contratado para Matar (5/5⭐)&lt;/li&gt;&#xA;&lt;li&gt;🎞️ O Fim da Rua (2.0/5⭐)&lt;/li&gt;&#xA;&lt;li&gt;🎞️ Homem Aranha: Sem Volta para Casa (4.5/5⭐)&lt;/li&gt;&#xA;&lt;li&gt;🎞️ The Punisher (3.5/5⭐)&lt;/li&gt;&#xA;&lt;li&gt;🎞️ Coyote vs Acme (4.5/5⭐)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;h2 id=&#34;albums&#34;&gt;&#xD;&#xA;  albums&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🎵 The Strokes - Reality Awaits&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
+</rss>
