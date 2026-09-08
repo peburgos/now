@@ -27,4 +27,7 @@ title = 'peburgos'
     extended = false
     min = '0.93.0'
 
-
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
