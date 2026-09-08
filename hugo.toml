@@ -2,6 +2,10 @@ baseURL = 'https://example.org/'
 locale = 'pt-BR'
 title = 'peburgos'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [menus]
   [[menus.main]]
     name = '/now'
