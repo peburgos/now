@@ -1,6 +1,5 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
 
   {{/* Table of Contents */}}
   {{ $hasToC := .Params.toc | default true }}
@@ -28,6 +27,7 @@
          <span class="lastmod"> · Last updated: {{ .LastMod.Format "2006-01-02" }}</span>
        {{ end }}
      {{ end }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
    </div>
 
   <!-- Comments block -->

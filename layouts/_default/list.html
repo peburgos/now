@@ -20,4 +20,15 @@
       {{ end }}
     {{ end }}
   </ul>
+  {{ if not .IsHome }}
+    <div class="terminal-nav">
+      <div class="back-nav">
+        {{ with .Parent }}
+          <a href="{{ .RelPermalink }}" class="back-link">../</a>
+        {{ else }}
+          <a href="{{ "/" | relURL }}" class="back-link">../</a>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
 {{ end }}

@@ -138,6 +138,10 @@ a.benji-row:hover {
   flex-shrink: 0; /* Protege a data contra compressão */
 }
 
+/* Força todas as tags a ficarem em minúsculas baseando-se na URL do link */
+a[href*="/tags/"] {
+  text-transform: lowercase !important;
+}
 
 /* ===================================================== */
 /* 5. Responsividade: Telas menores                      */
