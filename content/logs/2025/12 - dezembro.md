@@ -1,5 +1,5 @@
 ---
-title: "II - Novo ano, novo caos, novo layout"
+title: "I - Não deixe para amanhã o que você pode falhar hoje"
 date: 2025-12-07T20:00:00-03:00
 ---
 

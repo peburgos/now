@@ -1,6 +1,6 @@
 ---
-title: "I - Não deixe para amanhã o que você pode falhar hoje"
-date: 2025-11-07T20:00:00-03:00
+title: "II - Novo ano, novo caos, novo layout"
+date: 2026-01-07T20:00:00-03:00
 ---
 
 ## Introdução
