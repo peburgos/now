@@ -17,10 +17,15 @@ title = 'peburgos'
     pageRef = '/logs'
     weight = 20
 
+    [[menus.main]]
+    name = '/projects'
+    pageRef = '/projects'
+    weight = 30
+
   [[menus.main]]
     name = '/about'
     pageRef = '/about'
-    weight = 30
+    weight = 40
 
 [module]
   [module.hugoVersion]

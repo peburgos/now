@@ -16,17 +16,33 @@
    <!-- Content -->
    {{ .Content }}
    <div class="time">
-     {{ partial "date.html" .Date }}
-     {{ $showReadingTime := .Params.showreadingtime | default site.Params.showreadingtime | default true }}
-     {{ if and $showReadingTime .ReadingTime }}
-       <span class="reading-time"> · {{ .ReadingTime }} min read</span>
+     <!-- 1. Só exibe a data se ela existir (não for a data zero) -->
+     {{ if not .Date.IsZero }}
+       {{ partial "date.html" .Date }}
      {{ end }}
+
+     <!-- 2. Lógica corrigida para respeitar o "false" do front matter -->
+     {{ $showReadingTime := true }}
+     {{ if isset .Params "showreadingtime" }}
+       {{ $showReadingTime = .Params.showreadingtime }}
+     {{ else if isset site.Params "showreadingtime" }}
+       {{ $showReadingTime = site.Params.showreadingtime }}
+     {{ end }}
+
+     {{ if and $showReadingTime .ReadingTime }}
+       <span class="reading-time">
+         <!-- Só adiciona o separador (·) se a data estiver presente -->
+         {{ if not .Date.IsZero }} · {{ end }}{{ .ReadingTime }} min read
+       </span>
+     {{ end }}
+
      {{ $showLastMod := .Params.showlastmod | default site.Params.showlastmod | default false }}
      {{ if and $showLastMod .Lastmod }}
        {{ if ne .LastMod.Format "2006-01-02" .Date.Format "2006-01-02" }}
          <span class="lastmod"> · Last updated: {{ .LastMod.Format "2006-01-02" }}</span>
        {{ end }}
      {{ end }}
+
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
    </div>
 

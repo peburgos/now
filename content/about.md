@@ -1,6 +1,7 @@
 ---
 title: "about"
 toc: false
+showReadingTime: false
 ---
 
 # references
@@ -12,11 +13,6 @@ toc: false
 - [astro chiri]
 - [shud.in]
 - [benji.org]
-
-
-# projects
-- 💼 [portfolio]
-- 🗄️ [estante]
 
 
 # social
