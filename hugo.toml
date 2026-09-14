@@ -1,6 +1,7 @@
 baseURL = 'https://example.org/'
 locale = 'pt-BR'
 title = 'peburgos'
+ignoreFiles = ['rpgProject']
 
 [caches]
   [caches.images]
@@ -17,7 +18,7 @@ title = 'peburgos'
     pageRef = '/logs'
     weight = 20
 
-    [[menus.main]]
+  [[menus.main]]
     name = '/projects'
     pageRef = '/projects'
     weight = 30
