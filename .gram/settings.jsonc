@@ -1,0 +1,12 @@
+{
+  "terminal": {
+    "shell": {
+      "program": "powershell.exe"
+    }
+  },
+  "colorize_brackets": true,
+  "indent_guides": {
+    "coloring": "fixed"
+  },
+  "hard_tabs": true
+}
