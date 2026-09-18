@@ -1,11 +1,14 @@
 # Escolha dos temas
 
-## 1. Para o primeiro, escolha um que explique quem é o seu personagem
+## 1. Quem é o seu personagem
 ### Temas disponíveis:
-
+- People
+- People (Crossover Tool)
 
 ## 2. Em seguida, escolha temas sobre 
 ### Temas disponíveis:
+- Skill or Trade (Crossover Tool)
+- Devotion (Crossover Tool)
 
 ## 3. Terceiro tema
 ### Temas desbloqueáveis

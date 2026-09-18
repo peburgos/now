@@ -3,6 +3,9 @@ title: "about"
 toc: false
 showReadingTime: false
 ---
+# made with
+- [Hugo]
+- [shibui]
 
 # references
 ## now page
@@ -21,13 +24,11 @@ showReadingTime: false
 - 🛠️ [github]
 
 
+[Hugo]: https://gohugo.io/
+[shibui]: https://github.com/ntk148v/shibui
 
-
-
-[portfolio]: https://portfolio.peburgos.com.br
 [bluesky]: https://bsky.app/profile/peburgos.com.br
 [github]: https://github.com/peburgos
-[estante]: https://estante.peburgos.com.br
 
 [nownownow]: https://nownownow.com/about
 [sergio's now page]: https://now.spagnuolo.news
@@ -35,4 +36,3 @@ showReadingTime: false
 [astro chiri]: https://github.com/the3ash/astro-chiri
 [shud.in]: https://shud.in/thoughts
 [benji.org]: https://benji.org/
-
